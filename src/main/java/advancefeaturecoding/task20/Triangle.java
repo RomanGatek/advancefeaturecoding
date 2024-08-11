@@ -47,6 +47,16 @@ public class Triangle extends Shape{
     }
 
     @Override
+    public void displayInfo() {
+        System.out.println("Triangle Information:");
+        System.out.println("Side 1: " + side1);
+        System.out.println("Side 2: " + side2);
+        System.out.println("Side 3: " + side3);
+        System.out.println("Perimeter: " + calculatePerimeter());
+        System.out.println("Area: " + calculateArea());
+    }
+
+    @Override
     public String toString() {
         return "Triangle{" +
                 "side1=" + side1 +

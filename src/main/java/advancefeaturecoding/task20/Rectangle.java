@@ -27,12 +27,21 @@ public class Rectangle extends Shape {
 
     @Override
     public double calculatePerimeter() {
-        return 2 * (width * height);
+        return 2 * (width + height);
     }
 
     @Override
     public double calculateArea() {
         return width * height;
+    }
+
+    @Override
+    public void displayInfo() {
+        System.out.println("Rectangle Information: ");
+        System.out.println("Width: " + width);
+        System.out.println("Heigth: " + height);
+        System.out.println("Perimeter: " + calculatePerimeter());
+        System.out.println("Area: " + calculateArea());
     }
 
     @Override

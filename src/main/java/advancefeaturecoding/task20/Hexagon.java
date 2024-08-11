@@ -24,6 +24,13 @@ public class Hexagon extends Shape{
         return (3 * Math.sqrt(3) / 2) * Math.pow(side, 2);
     }
 
+    public void displayInfo() {
+        System.out.println("Hexagon information: ");
+        System.out.println("Side length: " + side);
+        System.out.println("Perimeter: " + calculatePerimeter());
+        System.out.println("Area: " + calculateArea());
+    }
+
     @Override
     public String toString() {
         return "Hexagon{" +
